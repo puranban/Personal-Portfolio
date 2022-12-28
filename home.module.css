@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+
+    .center {
+        margin: auto;
+
+        .name {
+            font-size: 25px;
+        }
+
+        .address {
+            font-size: 40px;
+
+        }
+    }
+}
