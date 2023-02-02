@@ -16,8 +16,8 @@ export default function Home() {
           <div className={styles.name}>
             Puran Ban
           </div>
-          <div className={styles.address}>
-            Kathmandu Nepal
+          <div className={styles.profession}>
+            Frontend Developer
           </div>
           <div>
             <Link href="https://github.com/puranban" >

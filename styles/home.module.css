@@ -1,21 +1,21 @@
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 6rem;
     min-height: 100vh;
 
     .center {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         margin: auto;
 
         .name {
-            font-size: 25px;
+            font-size: 40px;
         }
 
-        .address {
-            font-size: 40px;
-
+        .profession {
+            font-size: 20px;
         }
     }
 }
