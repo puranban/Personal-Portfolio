@@ -24,14 +24,6 @@ jobs:
       - name: Install dependencies
         run: yarn install && yarn build
 
-  # Deployment jobs
-  deploy:
-    environment:
-      name: github-pages
-      url:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to github pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      - name: Build
+        run: yarn export
+
