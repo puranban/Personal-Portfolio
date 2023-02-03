@@ -14,6 +14,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.center}>
           <div className={styles.name}>
+            Hello!
             Puran Ban
           </div>
           <div className={styles.profession}>
