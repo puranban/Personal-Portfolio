@@ -2,7 +2,7 @@ name: Portfolio
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs: 
   
