@@ -4,36 +4,34 @@ on:
     branches:
       - main
 
-jobs: 
-  
+jobs:
+
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node
-      - uses: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: '19.x'
           cache: 'yarn'
 
       - name: Setup Pages
-      - uses: actions/configure-page@v3
+        uses: actions/configure-page@v3
         with: 
           static_site_generator: next
 
       - name: Install dependencies
         run: yarn install && yarn build
 
-# Deployment jobs
-deploy:
-  environment:
-    name: github-pages
-    url:
-  runs-on: ubuntu-latest
-  needs: build
-  steps:
-    - name: Deploy to github pages
-      id: deployment
-      uses: actions/deploy-pages@v1
-
-
+  # Deployment jobs
+  deploy:
+    environment:
+      name: github-pages
+      url:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v1
