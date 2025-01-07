@@ -1,11 +1,13 @@
+import Container from "@/components/Container";
+
 export default function Home() {
   return (
-    <div className="py-24">
-      <main className="container">
-        <h1 className="text-3xl font-bold">
+    <main className="flex justify-center items-center">
+      <Container>
+        <div>
           Homepage
-        </h1>
-      </main>
-    </div>
+        </div>
+      </Container>
+    </main>
   );
 }

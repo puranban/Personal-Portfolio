@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
     darkMode: ["class"],
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,6 +10,9 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+        bodyColor: 'var(--body-color)',
+        hoverColor: 'var(--hover-color)',
+        lightSkyColor: 'var(--light-sky-color)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -59,5 +62,4 @@ const config: Config = {
   	}
   },
   plugins: [require("tailwindcss-animate")],
-};
-export default config;
+} satisfies Config;
